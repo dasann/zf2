@@ -1429,7 +1429,7 @@ class Filesystem extends AbstractAdapter implements
                 umask($umask);
             }
 
-            if (!$res) {
+            if (!$res && !file_exists($pathname)) {
                 $oct = ($perm === false) ? '777' : decoct($perm);
                 $err = ErrorHandler::stop();
                 throw new Exception\RuntimeException(
