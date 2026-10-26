@@ -1,0 +1,2 @@
+<?xml version="1.0"?>
+<ruleset name="David-Sann-PSR12"><description>PSR-12 on explicitly selected changed files.</description><arg name="extensions" value="php,phtml,inc"/><arg value="s"/><rule ref="PSR12"/></ruleset>
